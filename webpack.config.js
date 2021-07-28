@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, "./src/js/app.js"),
+    main: path.resolve(__dirname, "./src/client/js/app.js"),
   },
   output: {
     filename: "[name].bundle.js",
@@ -37,7 +37,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new HTMLWebpackPlugin ({ title: "Webpack Output", }),
+    new HTMLWebpackPlugin ({
+      template: './src/client/index.html'
+    }),
     new CleanWebpackPlugin(),
   ],
 };
