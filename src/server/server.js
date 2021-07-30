@@ -8,14 +8,14 @@ const meaningCloudAPIBaseUrl = "https://api.meaningcloud.com/topics-2.0";
 const also = '&';
 
 const NewsAPI = {
-  apiBaseUrl = 'https://newsapi.org/';
-  endPoint = 'v2/top-headlines?';
-  byKeyword = 'q=';
-  byCountry = 'country=';
-  byCategory = 'category=';
-  bySources = 'sources=';
-  byPageSize = 'pageSize='; // Default 20, max 100
-  apiKey = 'appKey=';
+  apiBaseUrl: 'https://newsapi.org/',
+  endPoint: 'v2/top-headlines?',
+  byKeyword: 'q=',
+  byCountry: 'country=',
+  byCategory: 'category=',
+  bySources: 'sources=',
+  byPageSize: 'pageSize=', // Default 20, max 100
+  apiKey: 'appKey=',
 }
 
 require('dotenv').config(); // Load Environment Variable
@@ -23,11 +23,7 @@ require('dotenv').config(); // Load Environment Variable
 const apiKeyMeaningCloud = process.env.MeaningCloudAPIKey; // Store API Key locally
 const apiKeyNewsAPI = process.env.NewsAPIKey; // Store API Key locally
 
-const meaningCloudFormdata = new FormData();
-meaningCloudFormdata.append('key', apiKeyMeaningCloud); // Meaning Cloud API Key
-meaningCloudFormdata.append('lang', 'en');  // 2-letter language code, like en es fr
-meaningCloudFormdata.append('tt', 'ecq'); // Extract all possible topics, a for all
-meaningCloudFormdata.append('uw', 'y'); // Find possible analysis when there are typos
+const FormData = require('form-data');
 
 const express = require('express'); // Include Express
 const bodyParser = require('body-parser'); // Include Body-parser
@@ -73,8 +69,10 @@ function configureApp() {
 // ----------------------------------------------------------------------------
 // Process Requests
 // ----------------------------------------------------------------------------
-// searchKeyword(keyword) - search a given feed for top headlines via NewsAPI
+// searchKeyword(keyword) - Search a given feed for top headlines via NewsAPI
 // processSearchRequest() - Make an API call based on Request data
+// getFormData(url) - Gets FormData for the given URL
+// analyzeURLRequest(url) - Analyze URL provided by the user
 // ----------------------------------------------------------------------------
 
 async function searchKeyword(keyword) {
@@ -106,13 +104,20 @@ async function processSearchRequest() {
   }
 }
 
-async function analyzeURLRequest(url) {
-
+function getFormData(url) {
+  let meaningCloudFormdata = new FormData();
+  meaningCloudFormdata.append('key', apiKeyMeaningCloud); // Meaning Cloud API Key
+  meaningCloudFormdata.append('lang', 'en');  // 2-letter language code, like en es fr
+  meaningCloudFormdata.append('tt', 'ecq'); // Extract all possible topics, a for all
+  meaningCloudFormdata.append('uw', 'y'); // Find possible analysis when there are typos
   meaningCloudFormdata.append('url', url);
+  return meaningCloudFormdata;
+}
 
+async function analyzeURLRequest(url) {
   const response = await fetch(meaningCloudAPIBaseUrl, {
     method: 'POST',
-    body: meaningCloudFormdata,
+    body: getFormData(url),
     redirect: 'follow'
   });
 
@@ -142,7 +147,7 @@ function serverMain() {
     res.send(keywordSearch);
   });
 
-  app.post('/analyzeURL', (req, res)=>{
+  app.post('/analyzeURL', async (req, res)=>{
     urlAnalysis = await analyzeURLRequest(req.body);
 
     if (urlAnalysis.status.msg == 'OK') {
