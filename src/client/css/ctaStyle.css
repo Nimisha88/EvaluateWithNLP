@@ -1,6 +1,7 @@
 /* CTA Section */
 #cta {
   padding-bottom: calc(2*var(--page-p-tb));
+  display: relative;
 }
 
 .cta-container {
@@ -81,14 +82,14 @@
 /* Page Backdrop */
 .bckdrp-logo {
   position: absolute;
-  width: auto;
   right: 0;
-  bottom: 0;
-  /* bottom: 10vh; */
+  top: 10vh;
   opacity: 0.15;
   z-index: -1;
 }
 
 .bckdrp-logo-big {
+  width: auto;
+  height: 80vh;
   transform: rotateZ(15deg);
 }

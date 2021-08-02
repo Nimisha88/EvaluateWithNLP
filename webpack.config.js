@@ -8,11 +8,15 @@ module.exports = {
   },
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "./deploy"),
+    path: path.resolve(__dirname, "./deploy/client"),
   },
   devServer: {
-    contentBase: "./deploy",
-    open: true
+    contentBase: "./deploy/client",
+    open: true,
+    port: 9090,
+    proxy: {
+      '/api/*': 'http://localhost:8080',
+    }
   },
   module: {
     rules: [
@@ -22,7 +26,8 @@ module.exports = {
 	use: {
 	  loader: 'babel-loader',
 	  options: {
-	    presets: ['@babel/preset-env']
+	    presets: ['@babel/preset-env'],
+	    plugins: ['@babel/plugin-transform-runtime'],
 	  }
 	}
       },
@@ -31,7 +36,7 @@ module.exports = {
 	use: ["style-loader", "css-loader"]
       },
       {
-	test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+	test: /\.(?:ico|svg|gif|png|jpg|jpeg)$/i,
 	type: 'asset/resource',
       },
     ]

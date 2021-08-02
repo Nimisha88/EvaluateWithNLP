@@ -16,7 +16,11 @@
   --card-padding: 1rem;
 }
 
-#cta {
+/* #cta {
+  display: none;
+} */
+
+#result {
   display: none;
 }
 

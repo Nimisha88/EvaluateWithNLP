@@ -15,7 +15,7 @@ const NewsAPI = {
   byCategory: 'category=',
   bySources: 'sources=',
   byPageSize: 'pageSize=', // Default 20, max 100
-  apiKey: 'appKey=',
+  apiKey: 'apiKey=',
 }
 
 require('dotenv').config(); // Load Environment Variable
@@ -25,6 +25,7 @@ const apiKeyNewsAPI = process.env.NewsAPIKey; // Store API Key locally
 
 const FormData = require('form-data');
 
+const fs = require('fs');
 const express = require('express'); // Include Express
 const bodyParser = require('body-parser'); // Include Body-parser
 const cors = require('cors'); // Include CORS
@@ -38,7 +39,7 @@ const server = app.listen(port, () => {
 });
 
 let urlAnalysis;
-let keywordSearch = [];
+let keywordSearch = {relatedNews: []};
 
 
 // ----------------------------------------------------------------------------
@@ -84,7 +85,7 @@ async function searchKeyword(keyword) {
 
   try {
     const json = await response.json();
-    console.log(JSON.stringify(json));
+    // console.log(JSON.stringify(json));
     return json;
   }
   catch(error) {
@@ -98,7 +99,18 @@ async function processSearchRequest() {
       console.log(`Searching keyword ${entity.form}`);
       let searchResult = await searchKeyword(entity.form);
       if (searchResult.status == 'ok') {
-        keywordSearch.push(searchResult);
+        fs.appendFileSync('./newsAPIResponse.json', JSON.stringify(searchResult));
+        keywordSearch.relatedNews.push(searchResult);
+      }
+    }
+  }
+  for (entity of urlAnalysis.concept_list) {
+    if (entity.relevance >= 95) {
+      console.log(`Searching keyword ${entity.form}`);
+      let searchResult = await searchKeyword(entity.form);
+      if (searchResult.status == 'ok') {
+        fs.appendFileSync('./newsAPIResponse.json', JSON.stringify(searchResult));
+        keywordSearch.relatedNews.push(searchResult);
       }
     }
   }
@@ -108,7 +120,7 @@ function getFormData(url) {
   let meaningCloudFormdata = new FormData();
   meaningCloudFormdata.append('key', apiKeyMeaningCloud); // Meaning Cloud API Key
   meaningCloudFormdata.append('lang', 'en');  // 2-letter language code, like en es fr
-  meaningCloudFormdata.append('tt', 'ecq'); // Extract all possible topics, a for all
+  meaningCloudFormdata.append('tt', 'ec'); // Extract all possible topics, a for all
   meaningCloudFormdata.append('uw', 'y'); // Find possible analysis when there are typos
   meaningCloudFormdata.append('url', url);
   return meaningCloudFormdata;
@@ -123,7 +135,8 @@ async function analyzeURLRequest(url) {
 
   try {
     const json = await response.json();
-    console.log(JSON.stringify(json))
+    fs.writeFileSync('./meaningCloudAPIResponse.json', JSON.stringify(json));
+    // console.log(JSON.stringify(json));
     return json;
   }
   catch(error) {
@@ -142,18 +155,20 @@ function serverMain() {
   // Configure App Instance
   configureApp();
 
-  app.get('/getRelatedNews', (req, res)=> {
+  app.get('/api/getRelatedNews', (req, res)=> {
     console.log("Sending Related News Results");
+    // res.json(keywordSearch);
     res.send(keywordSearch);
+    // res.send({name:"A", work:"1"});
   });
 
-  app.post('/analyzeURL', async (req, res)=>{
-    urlAnalysis = await analyzeURLRequest(req.body);
+  app.post('/api/evaluateURL', async (req, res)=>{
+    console.log("POST received");
+    urlAnalysis = await analyzeURLRequest(req.body.url);
 
     if (urlAnalysis.status.msg == 'OK') {
       keywordSearch = await processSearchRequest();
     }
-
     res.send({
       msg: 'POST received'
     });
