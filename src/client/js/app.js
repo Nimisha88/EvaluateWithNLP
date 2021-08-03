@@ -19,7 +19,7 @@ const evaluateBtn = document.getElementById("ui-submit");
 const resultSection = document.getElementById("result");
 const ctaSection = document.getElementById("cta");
 const webPageBody = document.body;
-const regex = /^((http|https):\/\/)?(www.)?[a-zA-Z0-9_-]+\.[a-zA-Z]+(\/[a-zA-Z0-9_-]+\/?)*$/gm;
+const regex = /^((http|https):\/\/)?(www.)?[a-zA-Z0-9_-]+\.[a-zA-Z]+(\/[a-zA-Z0-9_-]+)+(\/[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)?(\/)?$/gm
 
 let displayData = [];
 
@@ -104,10 +104,10 @@ async function executeUserRequest() {
 }
 
 evaluateBtn.addEventListener("click", () => {
-  // if (regex.test(articleURL.value)) {
-  //   executeUserRequest();
-  // } else {
-  //   alert("URL missing. Please try again!");
-  // }
-  executeUserRequest();
+  if (regex.test(articleURL.value)) {
+    executeUserRequest();
+  } else {
+    alert("URL missing. Please try again!");
+  }
+  // executeUserRequest();
 });
