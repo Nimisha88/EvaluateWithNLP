@@ -1,5 +1,7 @@
 /* CTA Section */
 #cta {
+  padding: var(--page-p-tb) var(--page-p-lr);
+  flex: 0 1 auto;
   padding-bottom: calc(2*var(--page-p-tb));
   display: relative;
 }

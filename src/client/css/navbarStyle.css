@@ -1,8 +1,9 @@
 /* Navbar Styling */
 
-#navbar, #cta {
+#navbar {
   padding: var(--page-p-tb) var(--page-p-lr);
   flex: 0 1 auto;
+  font-family: 'Averia Sans Libre', cursive;
 }
 
 .logo {
@@ -18,8 +19,8 @@
 
 .logo img:hover {
   animation-name: spinLogo;
-  animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
 }

@@ -5,7 +5,8 @@
 // ----------------------------------------------------------------------------
 
 import '../css/style.css';
-import './components/img-comp.js';
+import './components/img-components.js';
+import createResultContainer from './components/result-components.js'
 
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
@@ -15,6 +16,10 @@ import './components/img-comp.js';
 
 const articleURL = document.getElementById("ui-url");
 const evaluateBtn = document.getElementById("ui-submit");
+const resultSection = document.getElementById("result");
+const ctaSection = document.getElementById("cta");
+const webPageBody = document.body;
+const regex = /^((http|https):\/\/)?(www.)?[a-zA-Z0-9_-]+\.[a-zA-Z]+(\/[a-zA-Z0-9_-]+\/?)*$/gm;
 
 let displayData = [];
 
@@ -57,6 +62,7 @@ async function getAsync(apiURL = '/api/getRelatedNews') {
   try {
     const json = await response.json();
     displayData = json;
+    return json;
   } catch (error) {
     console.log("Error: ", error);
   }
@@ -66,36 +72,42 @@ function ArticleURL(url) {
   this.url = url;
 }
 
+function displayResults() {
+
+  console.log(displayData);
+
+  ctaSection.style.display = 'none';
+  resultSection.style.display = 'block';
+  webPageBody.style.overflow = 'scroll';
+
+  for (let data of displayData) {
+
+    let ignoreKeywords = ["BBC News"];
+
+    if (ignoreKeywords.includes(data.keyword)) {
+      continue;
+    }
+
+    if (data.status == 'ok') {
+      resultSection.appendChild(createResultContainer(data));
+    }
+  }
+}
+
 async function executeUserRequest() {
   postAsync('/api/evaluateURL', new ArticleURL(articleURL.value))
-    .then((postJson) => {
+    .then(async (postJson) => {
       console.log('Fetching Related News');
-      return getAsync('/api/getRelatedNews');
-    })
-    .then((getJson) => {
-      /* ---------------------- Display Logic ---------------------- */
-      // console.log(JSON.stringify(getJson.json()));
-      // if (displayData.cod != 200) {
-      //   zipCode.value = '';
-      //   userFeelings.value = '';
-      //   console.log(`Error: ${JSON.stringify(displayData)}`);
-      //   alert(`Something went wrong. Please verify Zip Code and try again.`);
-      // } else {
-      //   userInput.style.display = 'none';
-      //   journalEntry.style.display = 'block';
-      //   displayWeatherIcon();
-      //   displayTemp();
-      //   displaySunTimes();
-      //   displayDate();
-      //   displayUserFeelings();
-      // }
+      await getAsync('/api/getRelatedNews');
+      displayResults();
     });
 }
 
 evaluateBtn.addEventListener("click", () => {
-  if (articleURL.value == "") {
-    alert("URL missing. Please try again!");
-  } else {
-    executeUserRequest();
-  }
+  // if (regex.test(articleURL.value)) {
+  //   executeUserRequest();
+  // } else {
+  //   alert("URL missing. Please try again!");
+  // }
+  executeUserRequest();
 });

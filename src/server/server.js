@@ -39,7 +39,7 @@ const server = app.listen(port, () => {
 });
 
 let urlAnalysis;
-let keywordSearch = {relatedNews: []};
+let keywordSearch = [];
 
 
 // ----------------------------------------------------------------------------
@@ -99,8 +99,9 @@ async function processSearchRequest() {
       console.log(`Searching keyword ${entity.form}`);
       let searchResult = await searchKeyword(entity.form);
       if (searchResult.status == 'ok') {
+        searchResult.keyword = entity.form;
         fs.appendFileSync('./newsAPIResponse.json', JSON.stringify(searchResult));
-        keywordSearch.relatedNews.push(searchResult);
+        keywordSearch.push(searchResult);
       }
     }
   }
@@ -109,8 +110,9 @@ async function processSearchRequest() {
       console.log(`Searching keyword ${entity.form}`);
       let searchResult = await searchKeyword(entity.form);
       if (searchResult.status == 'ok') {
+        searchResult.keyword = entity.form;
         fs.appendFileSync('./newsAPIResponse.json', JSON.stringify(searchResult));
-        keywordSearch.relatedNews.push(searchResult);
+        keywordSearch.push(searchResult);
       }
     }
   }
@@ -157,9 +159,7 @@ function serverMain() {
 
   app.get('/api/getRelatedNews', (req, res)=> {
     console.log("Sending Related News Results");
-    // res.json(keywordSearch);
-    res.send(keywordSearch);
-    // res.send({name:"A", work:"1"});
+    res.json(keywordSearch);
   });
 
   app.post('/api/evaluateURL', async (req, res)=>{
@@ -167,7 +167,7 @@ function serverMain() {
     urlAnalysis = await analyzeURLRequest(req.body.url);
 
     if (urlAnalysis.status.msg == 'OK') {
-      keywordSearch = await processSearchRequest();
+      let searchResult = await processSearchRequest();
     }
     res.send({
       msg: 'POST received'
