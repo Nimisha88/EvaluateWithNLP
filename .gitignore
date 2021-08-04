@@ -1,3 +1,4 @@
 src/server/.env
 node_modules
-deploy
+deploy/client
+deploy/server/.env
