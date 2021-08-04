@@ -1,0 +1,453 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [{
+    "source": {
+      "id": "cnn",
+      "name": "CNN"
+    },
+    "author": "By Virginia Langmaid and Marnie Hunter, CNN",
+    "title": "CDC adds 16 destinations to 'very high' Covid-19 travel risk list",
+    "description": "The US Centers for Disease Control and Prevention added 16 destinations to its \"very high\" Covid-19 risk level on Monday, including Greece, Ireland and the US Virgin Islands.",
+    "url": "http://us.cnn.com/travel/article/cdc-adds-very-high-risk-travel-destinations/index.html",
+    "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/210802161329-greece-tourism-060821-super-tease.jpg",
+    "publishedAt": "2021-08-02T21:29:28Z",
+    "content": "(CNN) The US Centers for Disease Control and Prevention added 16 destinations to its \"very high\" Covid-19 risk level on Monday, including Greece, Ireland and the US Virgin Islands.\r\nAccording to the … [+1544 chars]"
+  }, {
+    "source": {
+      "id": "the-hill",
+      "name": "The Hill"
+    },
+    "author": "Sylvan Lane",
+    "title": "White House says CDC can't renew eviction ban | TheHill",
+    "description": "The White House asserted on Monday that the Centers for Disease Control and Prevention (CDC) does...",
+    "url": "http://thehill.com/policy/finance/565965-white-house-says-cdc-cant-renew-eviction-ban",
+    "urlToImage": "https://thehill.com/sites/default/files/article_images/evictionnotice_080121getty.jpg",
+    "publishedAt": "2021-08-02T19:05:47Z",
+    "content": null
+  }, {
+    "source": {
+      "id": "national-review",
+      "name": "National Review"
+    },
+    "author": "Mairead McArdle",
+    "title": "CDC Shortens Coronavirus Quarantine Time",
+    "description": "The Centers for Disease Control and Prevention announced new guidelines Wednesday for how long someone who was exposed to the coronavirus should quarantine.",
+    "url": "https://www.nationalreview.com/news/cdc-shortens-coronavirus-quarantine-time/",
+    "urlToImage": "https://i0.wp.com/www.nationalreview.com/wp-content/uploads/2020/10/coronavirus-test-regeneron.jpg?fit=1200%2C700&ssl=1",
+    "publishedAt": "2020-12-02T16:59:27Z",
+    "content": "Medical technicians work at a drive-through coronavirus testing facility at Regeneron Pharmaceuticals’s Westchester campus in Tarrytown, N.Y., September 17, 2020.(Brendan McDermid/Reuters)\r\nThe Cente… [+1741 chars]"
+  }],
+  "keyword": "Centers for Disease Control and Prevention"
+} {
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [{
+    "source": {
+      "id": "cnn",
+      "name": "CNN"
+    },
+    "author": null,
+    "title": "Here's what it's like to house hunt in one of the craziest markets in the country - CNN Video",
+    "description": "Austin, Texas, is arguably the hottest real estate market in the country, with home prices up more than 40 percent since last April. Follow one local family as they struggle to find a place in their price range.",
+    "url": "http://us.cnn.com/videos/business/2021/06/05/austin-texas-housing-market-home-buying-zw-orig.cnn-business",
+    "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/210604194507-austin-homebuyers-house-hunting-super-tease.jpg",
+    "publishedAt": "2021-08-03T02:22:32.78881Z",
+    "content": ""
+  }, {
+    "source": {
+      "id": "google-news-in",
+      "name": "Google News (India)"
+    },
+    "author": "Aditya Raj Kaul",
+    "title": "EXCLUSIVE: Danish Siddiqui’s Body Was Mutilated; Head, Chest Crushed Under a SUV by the Taliban",
+    "description": "Two weeks after the brutal murder of Indian Journalist Danish Siddiqui, who worked as a chief photographer for news agency Reuters, by the Taliban, CNN-News18 has accessed for the first time a detailed medical report along with photographs and X-Ray of his mo…",
+    "url": "https://www.news18.com/news/india/exclusive-danish-siddiquis-body-was-mutilated-head-chest-crushed-under-a-suv-by-the-taliban-4037300.html",
+    "urlToImage": "https://images.news18.com/ibnlive/uploads/2021/07/1627576675_danish-siddiqui1111-1600x900.jpg",
+    "publishedAt": "2021-08-02T13:50:00+00:00",
+    "content": "Two weeks after the brutal murder of Indian Journalist Danish Siddiqui, who worked as a chief photographer for news agency Reuters, by the Taliban, CNN-News18 has accessed for the first time a detail… [+3796 chars]"
+  }, {
+    "source": {
+      "id": "newsweek",
+      "name": "Newsweek"
+    },
+    "author": "Cammy Pedroja",
+    "title": "Dr. Stella Immanuel, Hydroxychloroquine Advocate, Sues CNN, Anderson Cooper for $100M",
+    "description": "Dr. Stella Immanuel claimed \"You don't need masks, there is a cure...You don't need people to be locked down.\"",
+    "url": "https://www.newsweek.com/doc-who-backed-hydroxychloroquine-files-100m-defamation-suit-against-cnn-anderson-cooper-1614502",
+    "urlToImage": "https://d.newsweek.com/en/full/1858511/hydroxychloroquine.jpg",
+    "publishedAt": "2021-07-29T22:22:44Z",
+    "content": "The Texas doctor who became famous in 2020 for promoting the use of Hydroxychloroquine [HQC], an anti-malarial drug, as \"a cure\" for COVID-19 has filed a defamation lawsuit against CNN and CNN anchor… [+3259 chars]"
+  }],
+  "keyword": "CNN"
+} {
+  "status": "ok",
+  "totalResults": 10,
+  "articles": [{
+    "source": {
+      "id": "reuters",
+      "name": "Reuters"
+    },
+    "author": "Reuters",
+    "title": "Japan limits hospitalisation of COVID-19 patients to most serious as cases surge",
+    "description": "Japan will shift policy to focus on hospitalising patients who are seriously ill with the COVID-19 and those at risk of becoming so, officials said, to avoid strain on the medical system as cases surge in Olympics host city Tokyo and elsewhere.",
+    "url": "https://www.reuters.com/world/asia-pacific/japan-limits-hospitalisation-covid-19-patients-most-serious-cases-surge-2021-08-03/",
+    "urlToImage": "https://www.reuters.com/resizer/FrQy69nY6Zk4Sl7dMqNCR-xCEhU=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/G7BJV4K6KFNAJGTXYETKMUQEWQ.jpg",
+    "publishedAt": "2021-08-03T01:59:00Z",
+    "content": "Commuters wearing face masks arrive at Shinagawa Station at the start of the working day amid the coronavirus disease (COVID-19) outbreak, in Tokyo, Japan, August 2, 2021.REUTERS/Kevin CoombsTOKYO, A… [+1783 chars]"
+  }, {
+    "source": {
+      "id": "the-irish-times",
+      "name": "The Irish Times"
+    },
+    "author": "Brian Hutton",
+    "title": "‘Ulster thranness’ blamed for North’s vaccination outlier status",
+    "description": "Younger people refusing to get vaccine are putting others at risk, warns GP",
+    "url": "https://www.irishtimes.com/\t\t\t\t\t\t\t/news/ireland/irish-news/ulster-thranness-blamed-for-north-s-vaccination-outlier-status-1.4637217\t",
+    "urlToImage": "https://www.irishtimes.com/image-creator/?id=1.4637214&origw=619",
+    "publishedAt": "2021-08-02T23:27:48Z",
+    "content": "An Ulster thranness is to blame for the North becoming an outlier in Covid-19 vaccination uptake, a GP has warned.\r\nDr Tom Black, chairman of the British Medical Association, said younger people refu… [+2057 chars]"
+  }, {
+    "source": {
+      "id": "cnn",
+      "name": "CNN"
+    },
+    "author": "By Virginia Langmaid and Marnie Hunter, CNN",
+    "title": "CDC adds 16 destinations to 'very high' Covid-19 travel risk list",
+    "description": "The US Centers for Disease Control and Prevention added 16 destinations to its \"very high\" Covid-19 risk level on Monday, including Greece, Ireland and the US Virgin Islands.",
+    "url": "http://us.cnn.com/travel/article/cdc-adds-very-high-risk-travel-destinations/index.html",
+    "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/210802161329-greece-tourism-060821-super-tease.jpg",
+    "publishedAt": "2021-08-02T21:29:28Z",
+    "content": "(CNN) The US Centers for Disease Control and Prevention added 16 destinations to its \"very high\" Covid-19 risk level on Monday, including Greece, Ireland and the US Virgin Islands.\r\nAccording to the … [+1544 chars]"
+  }, {
+    "source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Nick Veronica, WROC Staff",
+    "title": "NY teachers union urges free testing but against vaccine mandate",
+    "description": "BUFFALO, N.Y. (WIVB) – With COVID-19 cases on the rise again and school about a month away, Gov. Cuomo on Monday urged school districts to implement vaccine requirements or weekly testing for teachers in high-risk areas. New York State United Teachers, a larg…",
+    "url": "https://www.wivb.com/community/education/ny-teachers-union-urges-free-testing-but-against-vaccine-mandate/",
+    "urlToImage": "https://www.wivb.com/wp-content/uploads/sites/97/2021/08/GettyImages-1276530918.jpg?w=1280",
+    "publishedAt": "2021-08-02T16:55:56+00:00",
+    "content": "BUFFALO, N.Y. (WIVB) With COVID-19 cases on the rise again and school about a month away, Gov. Cuomo on Monday urged school districts to implement vaccine requirements or weekly testing for teachers … [+1942 chars]"
+  }, {
+    "source": {
+      "id": "four-four-two",
+      "name": "FourFourTwo"
+    },
+    "author": "PA Staff",
+    "title": "Footballs should be sold with warning about dementia risk – Prof Willie Stewart",
+    "description": "The sale of footballs should now come with a health warning about the increased risk of dementia, according to a leading academic researching neurological disease in former professionals.",
+    "url": "https://www.fourfourtwo.com/news/footballs-should-be-sold-with-warning-about-dementia-risk-prof-willie-stewart-1627916881000",
+    "urlToImage": "https://cdn.mos.cms.futurecdn.net/LeVCsWxTmTMi8Pb25kBVuC-1200-80.jpg",
+    "publishedAt": "2021-08-02T15:08:01Z",
+    "content": "The sale of footballs should now come with a health warning about the increased risk of dementia, according to a leading academic researching neurological disease in former professionals.\r\nLatest dat… [+5943 chars]"
+  }, {
+    "source": {
+      "id": "google-news-uk",
+      "name": "Google News (UK)"
+    },
+    "author": "Guardian staff reporter",
+    "title": "UK weather: thunderstorms pose flood risk in England and Wales",
+    "description": "Yellow storm warning covers areas including Cardiff, Gloucestershire, Hampshire, Oxfordshire and London",
+    "url": "https://amp.theguardian.com/uk-news/2021/aug/02/uk-weather-thunderstorms-pose-flood-risk-in-england-and-wales",
+    "urlToImage": "https://i.guim.co.uk/img/media/60dfb5a8b24959ef04f8b24ac35a33ff963e88b2/0_39_5472_3283/master/5472.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4e2b03929ab7a40ad9e5192dcce080b1",
+    "publishedAt": "2021-08-02T14:37:00+00:00",
+    "content": "Thunderstorms and torrential downpours could cause flooding across parts of southern England and Wales.\r\nThe Met Office has issued a yellow weather warning for storms on Monday that covers areas incl… [+1561 chars]"
+  }, {
+    "source": {
+      "id": "the-next-web",
+      "name": "The Next Web"
+    },
+    "author": "The Conversation",
+    "title": "Post your vaccine selfie — it might encourage others to get the jab",
+    "description": "Vaxxies are likely helping normalize the vaccine procedure, reducing hesitancy around perceived risks, and increasing vaccine trust within social circles.",
+    "url": "http://thenextweb.com/news/vaccine-selfie-encourage-others-syndication",
+    "urlToImage": "https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&fit=1280%2C640&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F08%2FVaccine-selfie-covid-coronavirus-hed-shutterstock_1955325409.jpg&signature=9c8b0c7c69bb48fe51cc0c68835ac286",
+    "publishedAt": "2021-08-02T10:27:14Z",
+    "content": "Have you been vaccinated yet? And if you have, are you one of a growing number of people who posted a selfie on social media afterward? At a time when many people distrust government advertising, vac… [+6379 chars]"
+  }, {
+    "source": {
+      "id": "new-scientist",
+      "name": "New Scientist"
+    },
+    "author": null,
+    "title": "Inside the fight to stop destructive fishing in marine protected areas",
+    "description": "Marine protected areas in the English channel are still at risk from fishing activities, finds Adam Vaughan as he visits one on board a Greenpeace vessel",
+    "url": "https://www.newscientist.com/article/2284781-inside-the-fight-to-stop-destructive-fishing-in-marine-protected-areas/",
+    "urlToImage": "https://images.newscientist.com/wp-content/uploads/2021/07/29162053/gp1svhdv_pressmedia_web.jpg",
+    "publishedAt": "2021-08-02T00:00:00Z",
+    "content": "By Adam Vaughan\r\nGreenpeace campaigners aboard their ship, the Sea Beaver, are crowded around a screen showing a trawler sitting on the edge of the Bassurelle Sandbank, a marine protected area in the… [+416 chars]"
+  }, {
+    "source": {
+      "id": "vice-news",
+      "name": "Vice News"
+    },
+    "author": "Paul Blest",
+    "title": "A GOP Lawmaker Tested Positive for Coronavirus and Didn't Bother to Tell His Democratic Colleagues",
+    "description": "\"I never ever, ever knew that the Republican leadership of this state would put so many of us at risk for partisanship to cover up a lie,\" said one Pennsylvania state House member.",
+    "url": "https://www.vice.com/en_us/article/wxq549/a-gop-lawmaker-tested-positive-for-coronavirus-and-didnt-bother-to-tell-his-democratic-colleagues",
+    "urlToImage": "https://video-images.vice.com/test-uploads/articles/5ecfceb8212b2b00955fc2f6/lede/1590678499949-AP_20084652838863.jpeg?crop=1xw:0.8436407766990291xh;center,center&resize=1200:*",
+    "publishedAt": "2020-05-28T15:13:21Z",
+    "content": "Pennsylvania Democrats are furious after a Republican House lawmaker announced hed tested positive for coronavirus over a week ago but didnt tell them.\r\n State representative Andrew Lewis, a 33-year-… [+2944 chars]"
+  }, {
+    "source": {
+      "id": "the-american-conservative",
+      "name": "The American Conservative"
+    },
+    "author": null,
+    "title": "What is the New ‘Woke’ Military Really Preparing Us For?",
+    "description": "Critics say social engineering has infiltrated the armed forces, putting readiness at risk.",
+    "url": "https://www.theamericanconservative.com/articles/what-is-the-woke-military-really-preparing-us-for/",
+    "urlToImage": "https://www.theamericanconservative.com/wp-content/uploads/2019/11/shutterstock_292967063.jpg",
+    "publishedAt": "2019-11-08T01:23:47.6838262Z",
+    "content": "As a U.S. Army medic in the early 1970s, my father worked with wounded veterans who were suffering from what we would now call Post-Traumatic Stress Disorder. At the time, so my dad told me, many of … [+6921 chars]"
+  }],
+  "keyword": "risk"
+} {
+  "status": "ok",
+  "totalResults": 89,
+  "articles": [{
+    "source": {
+      "id": "news-com-au",
+      "name": "News.com.au"
+    },
+    "author": "Alexis Carey",
+    "title": "Live Breaking News: Queensland lockdown updates and Covid-19 case numbers",
+    "description": "Ms Palaszczuk has taken the extraordinary step of writing to the public directly in an emotional op-ed as the state's Delta nightmare escalates.",
+    "url": "https://www.news.com.au/national/breaking-news/live-breaking-news-queensland-lockdown-updates-and-covid19-case-numbers/live-coverage/26a097a1eb197876ad81b0dddd4cba0a",
+    "urlToImage": null,
+    "publishedAt": "2021-08-03T06:32:27Z",
+    "content": "Queensland Premier Annastacia Palaszczuk has revealed the \"cruel twist\" in her state's horror Delta outbreak, with more than one third of Queensland's Covid cases are in children aged under 10. \r\nIn … [+544 chars]"
+  }, {
+    "source": {
+      "id": "lenta",
+      "name": "Lenta"
+    },
+    "author": "Lenta",
+    "title": "Стало известно о высокой патогенности штамма «дельта»",
+    "description": "Группа специалистов из Токийского университета выяснила, что штамм коронавируса «дельта» имеет самую высокую патогенность среди других вариантов COVID-19. Также выяснилось, что заражение COVID-19 разрушает клетки, которые затем сливаются в единую массу под на…",
+    "url": "https://lenta.ru/news/2021/08/03/delta/",
+    "urlToImage": "https://icdn.lenta.ru/images/2021/08/03/05/20210803051243914/share_35eeffebad6a917c095627afb99c247f.jpg",
+    "publishedAt": "2021-08-03T02:20:05Z",
+    "content": ", «» COVID-19. NHK, .\r\n, , P681R. COVID-19.\r\n , COVID-19 , . , - , 2,7 . , .\r\n P681R 4,7-6,9 , .\r\n -, «-» «»-. , ."
+  }, {
+    "source": {
+      "id": "australian-financial-review",
+      "name": "Australian Financial Review"
+    },
+    "author": "Phillip Coorey",
+    "title": "COVID-19 spending has gone from eye watering to eye glazing",
+    "description": "Labor has embraced the same principle - spend, spend, spend - as the government with its call to give $300 to everyone who gets vaccinated by December 1, writes Phillip Coorey.",
+    "url": "http://www.afr.com/politics/federal/covid-spending-has-gone-from-eye-watering-to-eye-glazing-20210803-p58fbb",
+    "urlToImage": "https://static.ffx.io/images/$zoom_0.3498%2C$multiply_0.7554%2C$ratio_1.777778%2C$width_1059%2C$x_0%2C$y_90/t_crop_custom/e_sharpen:25%2Cq_85%2Cf_jpg/t_afr_opinion_no_age_social_wm/cd1bd6360f046420c468bb7da218365cf64935f3",
+    "publishedAt": "2021-08-03T02:04:22Z",
+    "content": "The government argued that at least that extra money acted as stimulus when much of the economy was shut down.\r\nA year later, Labor has embraced the same principle as the government with its politica… [+2500 chars]"
+  }, {
+    "source": {
+      "id": "reuters",
+      "name": "Reuters"
+    },
+    "author": "Reuters",
+    "title": "Japan limits hospitalisation of COVID-19 patients to most serious as cases surge",
+    "description": "Japan will shift policy to focus on hospitalising patients who are seriously ill with the COVID-19 and those at risk of becoming so, officials said, to avoid strain on the medical system as cases surge in Olympics host city Tokyo and elsewhere.",
+    "url": "https://www.reuters.com/world/asia-pacific/japan-limits-hospitalisation-covid-19-patients-most-serious-cases-surge-2021-08-03/",
+    "urlToImage": "https://www.reuters.com/resizer/FrQy69nY6Zk4Sl7dMqNCR-xCEhU=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/G7BJV4K6KFNAJGTXYETKMUQEWQ.jpg",
+    "publishedAt": "2021-08-03T01:59:00Z",
+    "content": "Commuters wearing face masks arrive at Shinagawa Station at the start of the working day amid the coronavirus disease (COVID-19) outbreak, in Tokyo, Japan, August 2, 2021.REUTERS/Kevin CoombsTOKYO, A… [+1783 chars]"
+  }, {
+    "source": {
+      "id": "al-jazeera-english",
+      "name": "Al Jazeera English"
+    },
+    "author": "Jessica Washington, Syarina Hasibuan",
+    "title": "A new generation of orphans as COVID ravages Indonesia",
+    "description": "As Indonesia’s COVID-19 death toll rises each day, too many young children know the despair of losing their parents.",
+    "url": "http://www.aljazeera.com/news/2021/8/3/children-left-orphaned-as-indonesias-covid-death-toll-surges",
+    "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2021/08/Alviano-in-his-home-in-East-Kalimantan-Mardans-Whaisman-1.jpg?resize=1200%2C630",
+    "publishedAt": "2021-08-03T01:52:42Z",
+    "content": "At a cemetery in East Kalimantan, 13-year-old Arga stands before his parents graves, dressed in a hazmat suit.\r\nRelatives have gathered around the cemetery for his mothers funeral. Argas face is cove… [+6333 chars]"
+  }, {
+    "source": {
+      "id": "google-news-au",
+      "name": "Google News (Australia)"
+    },
+    "author": "ABC News",
+    "title": "NSW records 199 COVID-19 cases as Premier Gladys Berejiklian sets new vaccination target",
+    "description": "NSW records 199 new locally acquired COVID-19 cases in the 24 hours to 8:00pm yesterday as Premier Gladys Berejiklian says she wants 6 million jabs in arms by the end of the month.",
+    "url": "https://www.abc.net.au/news/2021-08-03/nsw-records-199-new-covid-19-cases/100344204",
+    "urlToImage": "https://live-production.wcms.abc-cdn.net.au/910b80422d7a128873fdea78df7fbbc7?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=260&width=862&height=485",
+    "publishedAt": "2021-08-03T01:52:30+00:00",
+    "content": "NSW recorded 199 new locally acquired COVID-19 cases in the 24 hours to 8:00pm yesterday.\r\nKey points:\r\n<ul><li>NSW sets 6 million jab target for August</li><li>The state has delivered 3.9 million do… [+2421 chars]"
+  }, {
+    "source": {
+      "id": "fox-news",
+      "name": "Fox News"
+    },
+    "author": "Fox News",
+    "title": "Sen. Joe Manchin responds to concerns over COVID outbreak at boat party",
+    "description": "WV Democrat responds to questions regarding a boat outing attended by Sen. Lindsay Graham prior to testing positive for COVID-19 despite being vaccinated",
+    "url": "https://video.foxnews.com/v/6266298080001/",
+    "urlToImage": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/9fb7ec94-6af2-4ae8-93c8-f0ea55e192f4/abb213db-4349-4aea-b61b-d098cbaa0ce1/1280x720/match/image.jpg",
+    "publishedAt": "2021-08-03T01:52:20.9216783Z",
+    "content": null
+  }, {
+    "source": {
+      "id": "abc-news-au",
+      "name": "ABC News (AU)"
+    },
+    "author": "Georgia Hitch",
+    "title": "COVID-19 vaccine data shows areas with highest and lowest vaccination rates in the country",
+    "description": "New federal government data reveals the vaccination rates for first and second doses across the country, showing some outbreak areas have the lowest rates in their state.",
+    "url": "http://www.abc.net.au/news/2021-08-03/covid-19-vaccine-data-highest-lowest-rates-country/100344874",
+    "urlToImage": "https://live-production.wcms.abc-cdn.net.au/b4e6e09e75a433e875bab84867da0845?impolicy=wcms_crop_resize&cropH=759&cropW=1350&xPos=0&yPos=38&width=862&height=485",
+    "publishedAt": "2021-08-03T01:39:35Z",
+    "content": "New data released by the federal government has given the best picture yet of how the national vaccine rollout and uptake is going. \r\nThe information breaks down the first and second dose rate for el… [+4740 chars]"
+  }, {
+    "source": {
+      "id": "google-news-au",
+      "name": "Google News (Australia)"
+    },
+    "author": "Georgia Hitch",
+    "title": "COVID-19 vaccine data shows areas with highest and lowest vaccination rates in the country",
+    "description": "New federal government data reveals the vaccination rates for first and second doses across the country, showing some outbreak areas have the lowest rates in their state.",
+    "url": "https://www.abc.net.au/news/2021-08-03/covid-19-vaccine-data-highest-lowest-rates-country/100344874",
+    "urlToImage": "https://live-production.wcms.abc-cdn.net.au/b4e6e09e75a433e875bab84867da0845?impolicy=wcms_crop_resize&cropH=759&cropW=1350&xPos=0&yPos=38&width=862&height=485",
+    "publishedAt": "2021-08-03T01:39:35+00:00",
+    "content": "New data released by the federal government gives the best picture yet of how the national vaccine rollout and uptake is going. \r\nThe information breaks down the first and second dose rates for eligi… [+4594 chars]"
+  }, {
+    "source": {
+      "id": "entertainment-weekly",
+      "name": "Entertainment Weekly"
+    },
+    "author": "Lauren Huff",
+    "title": "<em>The Masked Singer</em> season 6 continues production amid 12 positive COVID-19 cases",
+    "description": "It is the show's first season since season 3 to feature a limited in-person audience.",
+    "url": "https://ew.com/tv/the-masked-singer-season-6-continues-production-amid-12-covid-cases/",
+    "urlToImage": "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=%5B667%2C0%5D&w=1309&h=655&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2021%2F05%2F20%2FMS-S5_EP512-Show-MB_0827.jpg",
+    "publishedAt": "2021-08-03T01:32:50Z",
+    "content": "The show must go on.\r\nDespite 12 positive COVID-19 cases on set, production on The Masked Singer season 6 has not been delayed and is still slated to wrap shooting Aug. 11, EW has confirmed. The news… [+1754 chars]"
+  }, {
+    "source": {
+      "id": "cbs-news",
+      "name": "CBS News"
+    },
+    "author": "CBS News",
+    "title": "Senator Lindsey Graham tests positive for COVID-19",
+    "description": "Republican Senator Lindsey Graham, who is vaccinated, says he tested positive for COVID. Graham tweeted that he's \"very glad I was vaccinated because without vaccination I am certain I would not feel as well as I do now.\" <b><a href=https://cbsn.ws/37dzs7B ta…",
+    "url": "https://www.cbsnews.com/video/senator-lindsey-graham-tests-positive-for-covid-19/",
+    "urlToImage": "https://cbsnews1.cbsistatic.com/hub/i/r/2021/08/02/c9955071-072d-4e30-9aa2-d0ea2efdd203/thumbnail/1200x630/edeb1d8ec04c4383b590a4dfabb1593b/cbsn-fusion-senator-lindsey-graham-tests-positive-for-covid-19-thumbnail-764885-640x360.jpg",
+    "publishedAt": "2021-08-03T01:21:34+00:00",
+    "content": "Watch CBSN Live\r\nCopyright © 2021 CBS Interactive Inc. All rights reserved.\r\nGet browser notifications for breaking news, live events, and exclusive reporting.\r\nNot NowTurn On"
+  }, {
+    "source": {
+      "id": "fox-news",
+      "name": "Fox News"
+    },
+    "author": "Fox News",
+    "title": "Justice Breyer rejects Maine church request to prevent new COVID-19 restrictions",
+    "description": "Supreme Court Justice Stephen Breyer rejected a Maine church’s request to prevent the state from reimposing COVID-19restrictions on places of worship.",
+    "url": "https://www.foxnews.com/politics/justice-breyer-rejects-church-request-to-prevent-new-covid-19-restrictions",
+    "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2021/03/Roberts-Breyer-Kagan.jpg",
+    "publishedAt": "2021-08-03T01:07:21.4549464Z",
+    "content": "Supreme Court Justice Stephen Breyer rejected a Maine churchs request to prevent the state from reimposing COVID-19restrictions on places of worship.\r\nBreyer rejected the church's motion for an injun… [+1270 chars]"
+  }, {
+    "source": {
+      "id": "abc-news-au",
+      "name": "ABC News (AU)"
+    },
+    "author": "ABC News",
+    "title": "NSW records 199 new COVID-19 cases",
+    "description": "NSW records 199 new locally acquired COVID-19 cases in the 24 hours to 8:00pm yesterday.",
+    "url": "http://www.abc.net.au/news/2021-08-03/nsw-records-199-new-covid-19-cases/100344204",
+    "urlToImage": "https://live-production.wcms.abc-cdn.net.au/910b80422d7a128873fdea78df7fbbc7?impolicy=wcms_crop_resize&cropH=2813&cropW=5000&xPos=0&yPos=260&width=862&height=485",
+    "publishedAt": "2021-08-03T01:01:38Z",
+    "content": "NSW recorded 199 new locally acquired COVID-19 cases in the 24 hours to 8:00pm yesterday.\r\nMore to come."
+  }, {
+    "source": {
+      "id": "google-news",
+      "name": "Google News"
+    },
+    "author": "Jake Dima",
+    "title": "Lindsey Graham gathered with lawmakers on Joe Manchin's houseboat prior to positive COVID-19 test",
+    "description": "Sen. Lindsey Graham reportedly gathered with fellow lawmakers on Sen. Joe Manchin's houseboat in Washington, D.C., last week, days before the South Carolina ...",
+    "url": "https://news.yahoo.com/lindsey-graham-gathered-lawmakers-joe-000600093.html",
+    "urlToImage": "https://s.yimg.com/uu/api/res/1.2/uc1j4oh_iQOUSEA9Ylu14w--~B/aD05NDA7dz0xNTQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/washington_examiner_articles_265/54152044733af35066bf7dfb2fde9395",
+    "publishedAt": "2021-08-03T00:20:58+00:00",
+    "content": "Sen. Lindsey Graham reportedly gathered with fellow lawmakers on Sen. Joe Manchin's houseboat in Washington, D.C., last week, days before the South Carolina Republican announced a positive COVID-19 t… [+2846 chars]"
+  }, {
+    "source": {
+      "id": "el-mundo",
+      "name": "El Mundo"
+    },
+    "author": "ÁNGEL DÍAZ",
+    "title": "Más de 10.500 ingresados por Covid-19, los mismos que a inicios de octubre",
+    "description": "España avanza hacia el objetivo del 70% de la población vacunada en una situación paradójica: la transmisión supera con creces la del inicio del otoño, cuando se fraguaba la...",
+    "url": "https://www.elmundo.es/ciencia-y-salud/salud/2021/08/03/610850c3fdddffc14e8b4632.html",
+    "urlToImage": "https://phantom-elmundo.unidadeditorial.es/48d53ecc80a7f96d800d130013fb342a/resize/1200/f/jpg/assets/multimedia/imagenes/2021/08/02/16279366927975.jpg",
+    "publishedAt": "2021-08-03T00:06:07Z",
+    "content": "España avanza hacia el objetivo del 70% de la población vacunada en una situación paradójica: la transmisión supera con creces la del inicio del otoño, cuando se fraguaba la segunda ola, mientras los… [+4062 chars]"
+  }, {
+    "source": {
+      "id": "fox-news",
+      "name": "Fox News"
+    },
+    "author": "Fox News",
+    "title": "Washington, DC locals react to renewed mask mandate",
+    "description": "Mayor Muriel Bowser's reinstated mandate against COVID-19, which went into effect Saturday, requires residents over the age of 2 to wear face masks indoors, regardless of vaccination.",
+    "url": "https://www.foxnews.com/us/mask-mandate-washington-dc-muriel-bowser",
+    "urlToImage": "https://static.foxnews.com/foxnews.com/content/uploads/2021/08/mask-mandate-thumbnail.jpg",
+    "publishedAt": "2021-08-02T23:52:20.0814623Z",
+    "content": "Washington, D.C. residents who spoke with Fox News on Monday were largely supportive of the city's renewed mask mandate.\r\nMayor Muriel Bowser's reinstated mandate, which went into effect Saturday mor… [+2084 chars]"
+  }, {
+    "source": {
+      "id": "google-news-br",
+      "name": "Google News (Brasil)"
+    },
+    "author": "UOL",
+    "title": "Covid: Com 473 novas mortes, Brasil tem menor média de óbitos desde 18/1",
+    "description": "O Brasil registrou hoje 473 novas novas mortes de covid-19, elevando para 557.359 o total de óbitos registrados desde o início da pandemia. Com isso, a média móvel de mortes, ficou em 968, a menor desde 18 de janeiro.Já o número de infectados subiu para 1",
+    "url": "https://www.uol.com.br/vivabem/noticias/redacao/2021/08/02/covid-19-coronavirus-casos-mortes-02-de-agosto.htm",
+    "urlToImage": "https://conteudo.imguol.com.br/c/noticias/87/2020/06/18/17jun2020---sepultamentos-voltaram-a-ser-feitos-em-covas-individuais-no-cemiterio-de-manaus-1592491874440_v2_615x300.jpg",
+    "publishedAt": "2021-08-02T23:44:09+00:00",
+    "content": "O Brasil registrou hoje 473 novas novas mortes de covid-19, elevando para 557.359 o total de óbitos registrados desde o início da pandemia. Com isso, a média móvel de mortes, ficou em 968, a menor de… [+3284 chars]"
+  }, {
+    "source": {
+      "id": "the-hill",
+      "name": "The Hill"
+    },
+    "author": "Jordain Carney",
+    "title": "Graham's COVID-19 'breakthrough' case jolts Senate | TheHill",
+    "description": "The coronavirus officially returned to the United States Senate on Monday.News that Sen. L...",
+    "url": "http://thehill.com/homenews/senate/566028-grahams-covid-19-breakthrough-case-jolts-senate",
+    "urlToImage": "https://thehill.com/sites/default/files/grahamlindsey_031721gn3_lead.jpg",
+    "publishedAt": "2021-08-02T23:34:24Z",
+    "content": "The coronavirus officially returned to the United States Senate on Monday.\r\nNews that Sen. Lindsey GrahamLindsey Olin GrahamGraham, Cuellar press Biden to name border czarTrump takes two punches from… [+14552 chars]"
+  }, {
+    "source": {
+      "id": "axios",
+      "name": "Axios"
+    },
+    "author": "Shawna Chen",
+    "title": "CDC extends policy allowing fast-track deportations",
+    "description": "The administration had planned to end the policy last month but reconsidered as the Delta variant of COVID-19 began to spread.",
+    "url": "https://www.axios.com/covid-cdc-deportations-migrants-a0eb9ddc-8d32-4110-9c19-9bf0937e4267.html",
+    "urlToImage": "https://images.axios.com/zKUnV21RHvAfF8CGn84W2ilRboQ=/0x247:4000x2497/1366x768/2021/08/02/1627945738891.jpg",
+    "publishedAt": "2021-08-02T23:26:06Z",
+    "content": "The Centers for Disease Control and Prevention (CDC) on Monday extended a controversial Trump-era policy that expels migrants to prevent the spread of COVID.\r\nWhy it matters: The Biden administration… [+1757 chars]"
+  }, {
+    "source": {
+      "id": "google-news-ca",
+      "name": "Google News (Canada)"
+    },
+    "author": "Meg Kinnard",
+    "title": "Lindsey Graham 1st vaccinated U.S. senator to test positive for COVID-19",
+    "description": "Sen. Lindsey Graham has become the first senator to disclose a breakthrough infection after being vaccinated against the coronavirus, saying Monday he is 'very glad' he received the vaccine, without which his current symptoms would be 'far worse.'",
+    "url": "https://www.ctvnews.ca/health/coronavirus/lindsey-graham-1st-vaccinated-u-s-senator-to-test-positive-for-covid-19-1.5531978",
+    "urlToImage": "https://www.ctvnews.ca/polopoly_fs/1.5259749.1627934461!/httpImage/image.jpg_gen/derivatives/landscape_620/image.jpg",
+    "publishedAt": "2021-08-02T23:24:02+00:00",
+    "content": "COLUMBIA, S.C. -- \r\nSen. Lindsey Graham has become the first senator to disclose a breakthrough infection after being vaccinated against the coronavirus, saying Monday he is \"very glad\" he received t… [+4444 chars]"
+  }],
+  "keyword": "COVID-19"
+}

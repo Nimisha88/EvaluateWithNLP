@@ -10,13 +10,15 @@ export default (data = {}) => {
 
   let resultColl = document.createElement("div"); resultColl.classList.add("result-collection");
 
-  if (data.articles.length > 10) {
-    data.articles.length = 10;
-  }
+  if (Object.keys(data).includes("articles")) {
+    if (data.articles.length > 10) {
+      data.articles.length = 10;
+    }
 
-  let resultCardCount = 1;
-  for (article of data.articles) {
-    resultColl.appendChild(createResultCard(article.url, article.urlToImage, article.title, resultCardCount++));
+    let resultCardCount = 1;
+    for (article of data.articles) {
+      resultColl.appendChild(createResultCard(article.url, article.urlToImage, article.title, resultCardCount++));
+    }
   }
 
   resultCont.appendChild(resultHead);
