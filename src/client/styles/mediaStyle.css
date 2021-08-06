@@ -1,0 +1,84 @@
+/* Medium Viewport */
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --md-page-extra-margin: 3%;
+  }
+
+  /* NavBar */
+  #navbar {
+    margin-top: var(--md-page-extra-margin);
+    margin-bottom: var(--md-page-extra-margin);
+  }
+
+  .logo img {
+    width: 4.5rem;
+  }
+
+  .heading h1 {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+  }
+
+  .heading h4 {
+    margin-top: 2%;
+  }
+
+  /* CTA */
+  #cta, #result {
+    /* margin-top: var(--md-page-extra-margin); */
+    margin-bottom: var(--md-page-extra-margin);
+  }
+}
+
+/* Small Viewport */
+@media (min-width: 361px) and (max-width: 768px) {
+
+  :root {
+    --sm-page-extra-margin: 5%;
+  }
+
+  /* NavBar */
+  #navbar {
+    margin-top: var(--sm-page-extra-margin);
+    margin-bottom: var(--sm-page-extra-margin);
+  }
+
+  .logo img {
+    width: 4rem;
+  }
+
+  .heading h1 {
+    margin-bottom: 0;
+    font-size: 2.25rem;
+  }
+
+  .heading h4 {
+    margin-top: 3%;
+  }
+
+  /* CTA */
+  #cta, #result {
+    /* margin-top: var(--sm-page-extra-margin); */
+    margin-bottom: var(--sm-page-extra-margin);
+  }
+
+  .cta-container, .cta-bckdrp-img {
+    height: 450px;
+  }
+
+  #ui-url {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    margin-bottom: 10%;
+  }
+
+  #ui-submit, #ui-back {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  /* Result */
+  .result-head {
+    font-size: 1.25rem;
+  }
+}

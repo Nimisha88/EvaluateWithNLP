@@ -1,4 +1,8 @@
-src/server/.env
+# API Keys
+.env
+
+# Dependencies
 node_modules
-deploy/client
-deploy/server/.env
+
+# Webpack static files
+./client

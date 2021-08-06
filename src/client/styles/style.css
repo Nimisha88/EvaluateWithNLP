@@ -1,0 +1,26 @@
+@import "navbarStyle.css";
+@import "ctaStyle.css";
+@import "footerStyle.css";
+@import "resultStyle.css";
+@import "mediaStyle.css";
+
+:root {
+  --page-p-tb: 3%;
+  --page-p-lr: 10%;
+  --cta-height: 400px;
+}
+
+body {
+  background-color: #171717ee;
+  color: #ededed;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Expletus Sans', cursive;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  /* border: 1px solid white; */
+}
+
+/* Color Palette */
+/* #171717, #444444, #DA0037, #EDEDED */
