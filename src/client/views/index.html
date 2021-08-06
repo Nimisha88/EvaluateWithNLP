@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Evaluate News Article with NLP</title>
+    <title>Coupled</title>
 
     <!-- Add Icon -->
-    <link rel="icon" href="./image/brand-logo.svg">
+    <link class="page-icon" rel="icon" href="">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f9ed1b6ec7.js" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Expletus+Sans&display=swap" rel="stylesheet">
 
     <!-- Add StyleSheet -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
 
   </head>
   <body>
@@ -23,8 +23,8 @@
       <div class="logo">
         <img src="" id="nav-logo" alt="App Logo">
         <div class="heading">
-          <h1>Evaluate News Article</h1>
-          <h4>using Natural Language Processing</h4>
+          <h1>Coupled</h1>
+          <h4>Extract Topics & Related Top Headlines</h4>
         </div>
       </div>
     </header>
@@ -35,10 +35,10 @@
         <div class="cta-form">
           <div class="ui-url-cont">
             <!-- <label class="lab-ui-url" for="ui-url"><h3>Enter URL to Article:</h3></label> -->
-            <input type="text" id="ui-url" name="ui-url" placeholder="Please enter the URL to article here ...">
+            <input type="text" id="ui-url" name="ui-url" placeholder="Enter Article URL here ...">
           </div>
           <div class="ui-submit-cont">
-            <input type="submit" id="ui-submit" name="ui-submit" value="Analyze">
+            <input type="submit" id="ui-submit" name="ui-submit" value="Evaluate" autocomplete="off">
           </div>
         </div>
       </div>
@@ -47,40 +47,14 @@
       </div>
     </section>
 
-    <section id="result">
-      <!-- <div class="result-container">
-        <div class="result-head">
-          Country Leaders
+    <section id="result"></section>
+
+    <section id="back-cta">
+      <div class="back-cta-container">
+        <div class="ui-back-cont">
+          <input type="submit" id="ui-back" name="ui-back" value="Go Back">
         </div>
-        <div class="result-collection">
-          <div class="result-card card1"> -->
-            <!-- <figure>
-              <img src="./image/NaMo.jpeg" alt="Card Image">
-              <figcaption>Shri Narendra Modi</figcaption>
-            </figure> -->
-          <!-- </div>
-          <div class="result-card card2"> -->
-            <!-- <figure>
-              <img src="./image/DoTr.jpeg" alt="Card Image">
-              <figcaption>Mr. Donald Trump</figcaption>
-            </figure> -->
-          <!-- </div>
-          <div class="result-card card3"> -->
-            <!-- <figure>
-              <img src="./image/JaAr.jpeg" alt="Card Image">
-              <figcaption>Ms. Jacinda Ardern</figcaption>
-            </figure> -->
-          <!-- </div>
-          <div class="result-card card4"></div>
-          <div class="result-card card5"></div>
-          <div class="result-card card6"></div>
-          <div class="result-card card7"></div>
-          <div class="result-card card8"></div>
-          <div class="result-card card9"></div>
-          <div class="result-card card10"></div>
-          <div class="last-card"></div>
-        </div>
-      </div> -->
+      </div>
     </section>
 
     <section id="footer">
@@ -89,6 +63,6 @@
       </div>
     </section>
 
-    <!-- <script src="./js/app.js" type="text/javascript" charset="utf-8"></script> -->
+    <!-- <script src="../js/app.js" type="text/javascript" charset="utf-8"></script> -->
   </body>
 </html>

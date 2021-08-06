@@ -34,7 +34,7 @@ function createResultCard(artURL, imgURL, title, cardCount) {
   let resultCard = document.createElement("div"); resultCard.classList.add("result-card", `card${cardCount}`);
   let figEle = document.createElement("figure");
   let linkEle = document.createElement("a"); linkEle.href = artURL; linkEle.target = "_blank";
-  let figEleImg = document.createElement("img"); figEleImg.alt = "Card Image"; figEleImg.src = imgURL;
+  let figEleImg = document.createElement("img"); figEleImg.alt = "News Image"; figEleImg.src = imgURL;
   let figEleCap = document.createElement("figcaption"); figEleCap.innerHTML = title;
 
   linkEle.appendChild(figEleImg);

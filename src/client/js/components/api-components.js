@@ -46,5 +46,3 @@ export async function getAsync(apiURL = '/api/getRelatedNews') {
     console.log("Error: ", error);
   }
 }
-
-module.exports = {postAsync, getAsync};

@@ -1,5 +1,6 @@
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const WorkboxPlugin = require("workbox-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -8,10 +9,10 @@ module.exports = {
   },
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "./deploy/client"),
+    path: path.resolve(__dirname, "client"),
   },
   devServer: {
-    contentBase: "./deploy/client",
+    contentBase: "client",
     open: true,
     port: 9090,
     proxy: {
@@ -45,5 +46,13 @@ module.exports = {
       template: './src/client/views/index.html'
     }),
     new CleanWebpackPlugin(),
+    // new WorkboxPlugin.GenerateSW({
+    //   clientsClaim: true,
+    //   skipWaiting: true,
+    //   runtimeCaching: [{
+    //     urlPattern: /\//,
+    //     handler: 'NetworkOnly',
+    //   },]
+    // }),
   ],
 };
