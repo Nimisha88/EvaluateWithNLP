@@ -2,6 +2,9 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const WorkboxPlugin = require("workbox-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -10,14 +13,6 @@ module.exports = {
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
-  },
-  devServer: {
-    contentBase: "dist",
-    open: true,
-    port: 9090,
-    proxy: {
-      '/api/*': 'http://localhost:8080',
-    }
   },
   module: {
     rules: [{
@@ -33,13 +28,19 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader"]
       },
       {
         test: /\.(?:ico|svg|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource',
       },
     ]
+  },
+  optimization: {
+    minimizer: [
+      new TerserPlugin(),
+      new CssMinimizerPlugin(),
+    ],
   },
   plugins: [
     new HTMLWebpackPlugin({
@@ -54,5 +55,6 @@ module.exports = {
         handler: 'NetworkOnly',
       },]
     }),
+    new MiniCssExtractPlugin(),
   ]
 };

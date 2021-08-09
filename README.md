@@ -32,19 +32,29 @@ https://user-images.githubusercontent.com/29170466/128664683-bd594c2d-ae29-4233-
     NewsAPIKey=your-api-key-here
     ```
 * On terminal, `cd` to the main application folder containing `package.json` and install dependencies by running `npm install`
-* Application is configured with 4 scripts:
-  * **Jest Test**: Run Jest tests with command `npm run test`
-  * **Dev mode (with Dev Server)**: Run Webpack DevServer with command `npm run dev`
-  * **Prod mode**: Run Webpack in production mode with command `npm run build`
-  * **Server**: Spin a NodeJS Server to serve application's api requests with command `npm run server`
-  * **NOTE**: Server should be run after running webpack
 
 
 ## Application access
 
-  * **Development Mode**: Webpack DevServer automatically spins the app at http://localhost:9090/. It is configured to proxy requests to the NodeJS Server running at port 8080 for application's api requests. Kindly DO NOT access http://localhost:8080/ directly as client folder will be empty for development mode.
-  * **Production Mode**: Initiate the application manually using url http://localhost:8080/
-  * **NOTE**: It is important to run the NodeJS server using command `npm run server` to fetch API data upon request after running webpack in both development and production mode.
+* **Test Application**: To run the Jest Tests, run command `npm run test` from the main application folder (containing `package.json`)
+
+* **Development Mode**: To run application in Development Mode, run following commands from the main application folder (containing `package.json`):
+  ```
+  npm run dev
+  npm run server
+  ```
+  DevServer should automatically spins the application at http://localhost:9090/. It is configured to proxy to Node Server listening at 8080 to serve API data requests.
+
+  *Note*: Webpack dev server does NOT write static files in `dist`, it serves the bundle virtually from the memory. `dist` will be created but will be empty in the development mode. [Read more](https://stackoverflow.com/questions/48936567/webpack-dev-server-does-not-place-bundle-in-dist)
+
+* **Prod mode**: To run application in Production Mode, run following commands from the main application folder (containing `package.json`):
+  ```
+  npm run prod
+  npm run server
+  ```
+  Initiate the application manually using url http://localhost:8080/
+
+  *Note*: Webpack will write static files in `dist`. `dist` will be created with required webpack bundle files.
 
 
 ## Folder Structure
@@ -53,8 +63,9 @@ https://user-images.githubusercontent.com/29170466/128664683-bd594c2d-ae29-4233-
   * README.md - Read me file
   * .gitignore - Files that were ignored in commit
   * package.json - Contains list of installable dependencies needed to run the application locally
-  * webpack.config.js - Contains Webpack configurations
-  * server/server.js - Server side scripting to handle API requests asynchronously
+  * webpack.config.js - Contains Webpack dev configurations
+  * webpack.prod.js - Contains Webpack prod configurations
+  * src/server/server.js - Server side scripting to handle API requests asynchronously
   * src/client
     * views/index.html - Landing page of the application
     * styles/*.css - Styling scripts used in the application

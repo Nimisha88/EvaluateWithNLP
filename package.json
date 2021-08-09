@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "server": "node server/server.js",
-    "dev": "webpack server --mode development",
-    "build": "webpack --mode production"
+    "server": "node src/server/server.js",
+    "dev": "webpack server --mode development --config webpack.config.js",
+    "prod": "webpack --mode production --config webpack.prod.js"
   },
   "babel": {
     "presets": [

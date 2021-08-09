@@ -35,7 +35,7 @@ const app = express(); // Start up an instance of app
 const port = 8080; // Port for the server to listen at
 
 const server = app.listen(port, () => {
-  console.log(`Running on "localhost: ${port}"`);
+  console.log(`Application running on "localhost: 9090" in Development, "localhost: ${port}" in Production`);
   // console.log(`API of Meaning Cloud: ${apiKeyMeaningCloud}`);
   // console.log(`API of News API: ${apiKeyNewsAPI}`);
 });
@@ -65,7 +65,7 @@ function configureApp() {
   app.use(cors());
 
   // Initialize the Application Project folder
-  app.use(express.static('client'));
+  app.use(express.static('dist'));
 }
 
 
