@@ -23,8 +23,6 @@ https://user-images.githubusercontent.com/29170466/128664683-bd594c2d-ae29-4233-
 ## Installation instructions
 
 * Install [NodeJS](https://nodejs.org/)
-* Install NodeJS packages using following command lines:
-  `npm install`
 * Download the application locally and do the following:
   * Obtain an APIKey at [MeaningCloud](https://www.meaningcloud.com/) by creating a free account.
   * Obtain an APIKey at [NewsAPI](https://newsapi.org/) by creating a free account.
