@@ -63,6 +63,7 @@ https://user-images.githubusercontent.com/29170466/128664683-bd594c2d-ae29-4233-
   * README.md - Read me file
   * .gitignore - Files that were ignored in commit
   * package.json - Contains list of installable dependencies needed to run the application locally
+  * dist - Contains webpack bundle files in prod mode
   * webpack.config.js - Contains Webpack dev configurations
   * webpack.prod.js - Contains Webpack prod configurations
   * src/server/server.js - Server side scripting to handle API requests asynchronously
