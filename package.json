@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest",
     "server": "node server/server.js",
-    "dev": "webpack server --mode development --config webpack.config.js",
-    "build": "webpack --mode production --config webpack.config.js"
+    "dev": "webpack server --mode development",
+    "build": "webpack --mode production"
   },
   "babel": {
     "presets": [
@@ -40,9 +40,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "form-data": "^4.0.0",
-    "fs": "^0.0.1-security",
     "html-webpack-plugin": "^5.3.2",
-    "install": "^0.13.0",
     "jest": "^27.0.6",
     "jest-transform-stub": "^2.0.0",
     "node-fetch": "^2.6.1",
@@ -52,5 +50,31 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
     "workbox-webpack-plugin": "^6.1.5"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-modules-commonjs": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.8",
+    "babel-jest": "^27.0.6",
+    "babel-loader": "^8.2.2",
+    "body-parser": "^1.19.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cors": "^2.8.5",
+    "css-loader": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
+    "jest-transform-stub": "^2.0.0",
+    "node-fetch": "^2.6.1",
+    "npm": "^7.20.3",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2",
+    "workbox-webpack-plugin": "^6.1.5",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "terser-webpack-plugin": "^5.1.4"
   }
 }

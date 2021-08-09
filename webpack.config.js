@@ -1,7 +1,14 @@
+const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const WorkboxPlugin = require("workbox-webpack-plugin");
-const path = require("path");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
+// const devMode = process.env.NODE_ENV !== "production";
+const devMode = process.argv[process.argv.indexOf('--mode') + 1] !== 'production';
+console.log(`Webconfig is running in ${process.argv[process.argv.indexOf('--mode') + 1]} mode`);
 
 module.exports = {
   entry: {
@@ -33,7 +40,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: [devMode ? "style-loader": MiniCssExtractPlugin.loader, "css-loader"]
       },
       {
         test: /\.(?:ico|svg|gif|png|jpg|jpeg)$/i,
@@ -41,18 +48,24 @@ module.exports = {
       },
     ]
   },
+  optimization: {
+    minimizer: [
+      new TerserPlugin(),
+      new CssMinimizerPlugin(),
+    ],
+  },
   plugins: [
     new HTMLWebpackPlugin({
       template: './src/client/views/index.html'
     }),
     new CleanWebpackPlugin(),
-    // new WorkboxPlugin.GenerateSW({
-    //   clientsClaim: true,
-    //   skipWaiting: true,
-    //   runtimeCaching: [{
-    //     urlPattern: /\//,
-    //     handler: 'NetworkOnly',
-    //   },]
-    // }),
-  ],
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      runtimeCaching: [{
+        urlPattern: /\//,
+        handler: 'NetworkOnly',
+      },]
+    }),
+  ].concat(devMode ? [] : [new MiniCssExtractPlugin()]),
 };
