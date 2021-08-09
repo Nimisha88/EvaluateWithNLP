@@ -3,6 +3,11 @@
 A web tool that allows users to run Natural Language Processing (NLP) on News Articles to extract relevant topics and display their related Top Headlines.
 
 
+## Application Preview
+
+https://user-images.githubusercontent.com/29170466/128664683-bd594c2d-ae29-4233-ba4c-1432c945a1f8.mov
+
+
 ## Software, Firmware and Hardware
 
 * HTML, CSS, JavaScript
@@ -24,7 +29,8 @@ A web tool that allows users to run Natural Language Processing (NLP) on News Ar
   * Obtain an APIKey at [MeaningCloud](https://www.meaningcloud.com/) by creating a free account.
   * Obtain an APIKey at [NewsAPI](https://newsapi.org/) by creating a free account.
   * In the main application folder, create `.env` file and add your APIKey like
-    ```MeaningCloudAPIKey=your-api-key-here
+    ```
+    MeaningCloudAPIKey=your-api-key-here
     NewsAPIKey=your-api-key-here
     ```
 * On terminal, `cd` to the main application folder containing `package.json` and install dependencies by running `npm install`
