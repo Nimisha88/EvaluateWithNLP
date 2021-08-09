@@ -36,6 +36,17 @@
   /* border: 1px solid white; */
 }
 
+.wait-for-result {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 66%;
+  font-size: 1.3rem;
+}
+
 .ui-url-cont {
   width: 75%;
 }

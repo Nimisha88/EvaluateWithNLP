@@ -22,6 +22,8 @@ const resultSection = document.getElementById("result");
 const ctaSection = document.getElementById("cta");
 const backCTASection = document.getElementById("back-cta");
 const goBackBtn = document.getElementById("ui-back");
+const ctaForm = document.querySelector(".cta-form");
+const waitMsg = document.querySelector(".wait-for-result");
 const webPageBody = document.body;
 const regex = /^((http|https):\/\/)?(www.)?([a-zA-Z0-9_-]+\.)+[a-zA-Z]+(\/[a-zA-Z0-9_-]+)+(\/[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+)?(\/)?$/gm
 
@@ -59,6 +61,8 @@ async function executeUserRequest() {
 function displayResults() {
   if(displayData.length != 0) {
     console.log(displayData);
+    ctaForm.style.display = 'flex';
+    waitMsg.style.display = 'none';
     ctaSection.style.display = 'none';
     resultSection.style.display = 'block';
     webPageBody.style.overflow = 'scroll';
@@ -89,16 +93,20 @@ evaluateBtn.addEventListener("click", () => {
   if (articleURL.value == "") {
     alert("URL missing. Please try again!");
   } else {
-    if (regex.test(articleURL.value)) {
+    let articleURLForRegexTest = (articleURL.value.split('?')[0]).split('/#')[0];
+    console.log(`Passed test for URL: ${articleURLForRegexTest}`);
+    if (regex.test(articleURLForRegexTest)) {
       if (window.navigator.onLine) {
+        ctaForm.style.display = 'none';
+        waitMsg.style.display = 'flex';
         executeUserRequest();
       } else {
         reloadPage();
         alert("You seem to be offline! Please check your network connection and try again.");
       }
     } else {
-      console.log(`Incorrect URL: ${JSON.stringify(articleURL.value)}`);
       reloadPage();
+      console.log(`Incorrect URL: ${JSON.stringify(articleURL.value)}`);
       alert("URL incorrect. Please try again!");
     }
   }
@@ -116,15 +124,15 @@ goBackBtn.addEventListener("click", () => {
 // Register Service Worker
 // ----------------------------------------------------------------------------
 
-// if ('serviceWorker' in navigator) {
-//   window.addEventListener("load", () => {
-//     console.log('Registering Service Worker');
-//     navigator.serviceWorker.register('service-worker.js')
-//       .then(registration => {
-//         console.log('SW registered: ', registration);
-//       })
-//       .catch(registrationError => {
-//         console.log('SW registration failed: ', registrationError);
-//       });
-//   });
-// }
+if ('serviceWorker' in navigator) {
+  window.addEventListener("load", () => {
+    console.log('Registering Service Worker');
+    navigator.serviceWorker.register('service-worker.js')
+      .then(registration => {
+        console.log('SW registered: ', registration);
+      })
+      .catch(registrationError => {
+        console.log('SW registration failed: ', registrationError);
+      });
+  });
+}

@@ -65,7 +65,7 @@ function configureApp() {
   app.use(cors());
 
   // Initialize the Application Project folder
-  app.use(express.static('../client'));
+  app.use(express.static('client'));
 }
 
 
@@ -97,6 +97,7 @@ async function searchKeyword(keyword) {
 
 async function processSearchRequest() {
   let entity, concept;
+  keywordSearch = [];
   for (entity of urlAnalysis.entity_list) {
     if (entity.relevance >= 75) {
       console.log(`Searching keyword ${entity.form}`);
@@ -220,8 +221,6 @@ function serverMain() {
     } else {
       res.send({ msg: 'POST request received. Something went wrong.' });
     }
-    res.send({ msg: 'POST request received. Topics extracted.' });
-
   });
 }
 
