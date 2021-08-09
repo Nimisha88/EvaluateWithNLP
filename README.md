@@ -34,16 +34,17 @@ https://user-images.githubusercontent.com/29170466/128664683-bd594c2d-ae29-4233-
 * On terminal, `cd` to the main application folder containing `package.json` and install dependencies by running `npm install`
 * Application is configured with 4 scripts:
   * **Jest Test**: Run Jest tests with command `npm run test`
-  * **Server**: Spin a NodeJS Server to serve application's api requests with command `npm run server`
   * **Dev mode (with Dev Server)**: Run Webpack DevServer with command `npm run dev`
   * **Prod mode**: Run Webpack in production mode with command `npm run build`
+  * **Server**: Spin a NodeJS Server to serve application's api requests with command `npm run server`
+  * **NOTE**: Server should be run after running webpack
 
 
 ## Application access
 
-  * **Development Mode**: Webpack DevServer automatically spins the app at http://localhost:9090/. It is configured to proxy requests to the NodeJS Server for application's api requests.
-  * **Production Mode**: Initiate the application using url http://localhost:8080/
-  * **NOTE**: It is important to run the NodeJS server using command `npm run server` to fetch API data upon request.
+  * **Development Mode**: Webpack DevServer automatically spins the app at http://localhost:9090/. It is configured to proxy requests to the NodeJS Server running at port 8080 for application's api requests. Kindly DO NOT access http://localhost:8080/ directly as client folder will be empty for development mode.
+  * **Production Mode**: Initiate the application manually using url http://localhost:8080/
+  * **NOTE**: It is important to run the NodeJS server using command `npm run server` to fetch API data upon request after running webpack in both development and production mode.
 
 
 ## Folder Structure
